@@ -8,6 +8,7 @@ import { ServerBucketComponent } from './server-bucket/server-bucket.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { UserRegistrationComponent } from './user-registration/user-registration.component';
+import { LoggerComponent } from './logger/logger.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { UserRegistrationComponent } from './user-registration/user-registration
     ServerBucketComponent,
     WarningAlertComponent,
     SuccessAlertComponent,
-    UserRegistrationComponent
+    UserRegistrationComponent,
+    LoggerComponent
   ],
   imports: [
     BrowserModule,
