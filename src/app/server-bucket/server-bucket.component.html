@@ -1,9 +1,10 @@
-<label>Server Name</label>
+<label>Server Name (using event handler)</label>
 <input 
     type="text" 
     class="form-control" 
     (input)="onUpdateServerName($event)">
 
+<label>Server Name (using two-way binding)</label>
 <input 
     type="text" 
     class="form-control" 
@@ -22,7 +23,10 @@
 
 <!--<p>{{ serverCreationStatus }}</p>-->
 
-<p *ngIf="serverCreated">{{ serverCreationStatus }}</p>
+<p *ngIf="serverCreated; else noServer">{{ serverCreationStatus }}</p>
+<ng-template #noServer>
+    <p>No server was created!</p>
+</ng-template>
 
 <app-server></app-server>
 <app-server></app-server>
