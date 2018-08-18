@@ -10,6 +10,7 @@ export class ServerBucketComponent implements OnInit {
   allowNewServer: boolean = false;
   serverCreationStatus: string = 'No server was created!';
   serverName: string = 'Test server';
+  serverCreated: boolean = false;
 
   constructor() { 
 
@@ -22,7 +23,8 @@ export class ServerBucketComponent implements OnInit {
   }
 
   onCreateServer() {
-    this.serverCreationStatus = 'Server ' + this.serverName + ' was created!';
+    this.serverCreated = true;
+    this.serverCreationStatus = 'Server "' + this.serverName + '" was created!';
   }
 
   onUpdateServerName(event: Event) {
