@@ -9,6 +9,8 @@ import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { UserRegistrationComponent } from './user-registration/user-registration.component';
 import { LoggerComponent } from './logger/logger.component';
+import { CockpitComponent } from './cockpit/cockpit.component';
+import { ServerElementComponent } from './server-element/server-element.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { LoggerComponent } from './logger/logger.component';
     WarningAlertComponent,
     SuccessAlertComponent,
     UserRegistrationComponent,
-    LoggerComponent
+    LoggerComponent,
+    CockpitComponent,
+    ServerElementComponent
   ],
   imports: [
     BrowserModule,

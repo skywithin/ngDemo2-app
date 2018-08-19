@@ -1,10 +1,21 @@
 <div class="container">
     <div class="row">
         <div class="col-xs-12">
-            <h1>I'm in the AppComponent</h1>
+            <h1>My ng Playground</h1>
             <hr>
+
+            <app-cockpit 
+                (srvCreated)="onServerAdded($event)"
+                (bpCreated)="onBlueprintAdded($event)"></app-cockpit>
+            <hr>
+            <app-server-element 
+                *ngFor="let serverElement of serverElements"
+                [srvElement]="serverElement"></app-server-element>
+            <hr>
+
             <app-server-bucket></app-server-bucket>
             <hr>
+
             <app-warning-alert></app-warning-alert>
             <hr>
             <app-success-alert></app-success-alert>
