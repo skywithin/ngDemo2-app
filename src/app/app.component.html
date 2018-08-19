@@ -4,6 +4,7 @@
             <h1>My ng Playground</h1>
             <hr>
 
+            <!-- Example #5: Add new Servers or Blueprints -->
             <app-cockpit 
                 (srvCreated)="onServerAdded($event)"
                 (bpCreated)="onBlueprintAdded($event)"></app-cockpit>
@@ -13,9 +14,20 @@
                 [srvElement]="serverElement"></app-server-element>
             <hr>
 
+            <!-- Example #4: Create Server -->
             <app-server-bucket></app-server-bucket>
             <hr>
 
+            <!-- Example #3: Create User -->
+            <app-user-registration></app-user-registration>
+            <hr>
+
+            <!-- Example #2: Hide/show log -->
+            <app-logger></app-logger>
+            <hr>
+
+            <!-- Example #1: Simple components -->
+            <h2>Example #1: Simple components</h2>
             <app-warning-alert></app-warning-alert>
             <hr>
             <app-success-alert></app-success-alert>
